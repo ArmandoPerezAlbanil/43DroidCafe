@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/textintro"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/intro_text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/choose_dessert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textintro"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="120dp"
+        android:padding="10dp"
+        android:text="@string/choose_a_dessert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/donut"
+        android:layout_width="132dp"
+        android:layout_height="131dp"
+        android:layout_below="@id/choose_dessert"
+        android:layout_marginEnd="96dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="160dp"
+        android:contentDescription="@string/donuts"
+        android:onClick="showDonutOrder"
+        android:padding="2dp"
+        android:src="@drawable/donut_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choose_dessert"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="184dp"
+        android:layout_toEndOf="@id/donut"
+        android:padding="35sp"
+        android:text="@string/donuts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/ice_cream"
+        android:layout_width="132dp"
+        android:layout_height="131dp"
+        android:layout_below="@id/donut"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="292dp"
+        android:contentDescription="@string/ice_cream_sandwiches"
+        android:onClick="showIceCreamOrder"
+        android:padding="10dp"
+        android:src="@drawable/icecream_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/donut"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="288dp"
+        android:layout_toEndOf="@id/ice_cream"
+        android:padding="35sp"
+        android:text="@string/ice_cream_sandwiches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.985"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/froyo"
+        android:layout_width="132dp"
+        android:layout_height="131dp"
+        android:layout_below="@id/ice_cream"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="424dp"
+        android:contentDescription="@string/froyo"
+        android:onClick="showFroyoOrder"
+        android:padding="10dp"
+        android:src="@drawable/froyo_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ice_cream"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="408dp"
+        android:layout_toEndOf="@id/froyo"
+        android:padding="35sp"
+        android:text="@string/froyo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
